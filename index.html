@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enterprise AI Strategy & Architecture | Collin</title>
-  <meta name="description" content="Enterprise AI strategy, architecture, agentic workflows, and production-grade implementation for organizations moving beyond experimentation." />
+  <title>Collin Paran — Fractional Head of AI</title>
+  <meta name="description" content="Fractional Head of AI for PE-backed operators, regulated-industry enterprises, and mid-market firms that need agentic systems in production — not another pilot deck." />
   <style>
     :root {
       --bg: #070b14;
@@ -74,7 +74,7 @@
       justify-content: center;
       padding: 12px 18px;
       border-radius: 999px;
-      font-weight: 750;
+      font-weight: 700;
       border: 1px solid var(--line);
       transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
     }
@@ -89,7 +89,7 @@
     }
 
     .hero {
-      padding: 92px 0 72px;
+      padding: 92px 0 56px;
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
       gap: 48px;
@@ -106,15 +106,15 @@
     }
 
     h1 {
-      font-size: clamp(2.8rem, 6vw, 5.9rem);
-      line-height: 0.94;
-      letter-spacing: -0.075em;
+      font-size: clamp(2.8rem, 6vw, 5.6rem);
+      line-height: 0.96;
+      letter-spacing: -0.07em;
       margin: 0 0 24px;
     }
 
-    .hero p {
+    .hero p.lede {
       color: var(--muted);
-      font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
       max-width: 680px;
       margin-bottom: 32px;
     }
@@ -147,30 +147,86 @@
       border-bottom: 1px solid var(--line);
     }
     .metric:last-child { border-bottom: 0; }
-    .metric strong { display: block; font-size: 2rem; letter-spacing: -0.04em; }
-    .metric span { color: var(--muted); }
+    .metric strong { display: block; font-size: 1.5rem; letter-spacing: -0.03em; line-height: 1.15; }
+    .metric span { color: var(--muted); font-size: 0.95rem; }
+
+    .proof-bar {
+      padding: 28px 0 56px;
+      border-bottom: 1px solid var(--line);
+    }
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .proof-item strong {
+      display: block;
+      font-size: 1.4rem;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 6px;
+    }
+    .proof-item span { color: var(--muted); font-size: 0.9rem; }
 
     section { padding: 64px 0; }
     .section-head { max-width: 760px; margin-bottom: 34px; }
-    h2 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1; letter-spacing: -0.06em; margin: 0 0 14px; }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.04; letter-spacing: -0.055em; margin: 0 0 14px; }
     .section-head p { color: var(--muted); font-size: 1.08rem; }
 
-    .grid {
+    .engagements {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
 
-    .card {
+    .engagement {
       background: rgba(16, 24, 39, 0.78);
       border: 1px solid var(--line);
       border-radius: 24px;
-      padding: 24px;
-      min-height: 210px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
     }
 
-    .card h3 { margin: 0 0 10px; font-size: 1.15rem; letter-spacing: -0.02em; }
-    .card p { margin: 0; color: var(--muted); }
+    .engagement .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(94,234,212,0.12);
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      align-self: flex-start;
+    }
+    .engagement h3 { margin: 0 0 8px; font-size: 1.35rem; letter-spacing: -0.025em; }
+    .engagement .shape { color: var(--muted); font-size: 0.92rem; margin: 0 0 18px; }
+    .engagement ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .engagement ul li { padding: 6px 0; border-bottom: 1px dashed var(--line); }
+    .engagement ul li:last-child { border-bottom: 0; }
+    .engagement .who { color: var(--muted); font-size: 0.85rem; margin-top: auto; }
+
+    .segments {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .segment {
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+    }
+    .segment h3 { margin: 0 0 8px; font-size: 1.1rem; letter-spacing: -0.02em; }
+    .segment p { margin: 0; color: var(--muted); font-size: 0.95rem; }
 
     .process {
       display: grid;
@@ -197,6 +253,18 @@
       font-weight: 900;
       margin-bottom: 18px;
     }
+    .step h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    .step p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+    .about {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .about p { color: var(--muted); margin: 0 0 14px; }
+    .about .links { margin-top: 18px; display: flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 0.95rem; }
+    .about .links a { border-bottom: 1px dashed rgba(94,234,212,0.4); padding-bottom: 1px; }
 
     .cta {
       background: linear-gradient(135deg, rgba(94,234,212,0.16), rgba(96,165,250,0.16));
@@ -211,19 +279,28 @@
 
     .cta h2 { margin-bottom: 10px; }
     .cta p { color: var(--muted); max-width: 660px; margin: 0; }
+    .cta .actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
     footer {
       padding: 34px 0 48px;
       color: var(--muted);
       border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
     }
+    footer .links a { margin-left: 18px; }
 
     @media (max-width: 880px) {
-      .hero, .grid, .process, .cta { grid-template-columns: 1fr; }
+      .hero, .engagements, .process, .cta, .about, .segments { grid-template-columns: 1fr; }
+      .proof-grid { grid-template-columns: repeat(2, 1fr); }
       .hero { padding-top: 54px; }
       .nav-links a:not(.button) { display: none; }
       .cta { display: block; }
-      .cta .button { margin-top: 24px; }
+      .cta .actions { margin-top: 24px; }
+      footer { flex-direction: column; }
+      footer .links a { margin-left: 0; margin-right: 18px; }
     }
   </style>
 </head>
@@ -231,10 +308,11 @@
   <header>
     <div class="container">
       <nav>
-        <a class="brand" href="#">Collin | Enterprise AI</a>
+        <a class="brand" href="#">Collin Paran</a>
         <div class="nav-links">
-          <a href="#services">Services</a>
-          <a href="#process">Process</a>
+          <a href="#engagements">Engagements</a>
+          <a href="#who">Who I Work With</a>
+          <a href="#about">About</a>
           <a href="#contact" class="button">Book a Call</a>
         </div>
       </nav>
@@ -244,34 +322,103 @@
   <main>
     <div class="container hero">
       <div>
-        <div class="eyebrow">Enterprise AI Strategy & Architecture</div>
-        <h1>Move from AI experiments to operational capability.</h1>
-        <p>I help enterprises design scalable AI architectures, integrate AI into legacy systems, and deploy agentic workflows that create measurable business outcomes.</p>
+        <div class="eyebrow">Fractional Head of AI · Strategy · Architecture · Agentic Systems</div>
+        <h1>From AI experiments to operational capability.</h1>
+        <p class="lede">I serve as fractional Head of AI for PE-backed operators, regulated-industry enterprises, and mid-market firms that need agentic systems running in production — not another pilot deck.</p>
         <div class="hero-actions">
-          <a href="mailto:collin@collinparan.com?subject=Enterprise%20AI%20Consulting%20Inquiry" class="button primary">Start the Conversation</a>
-          <a href="#services" class="button">View Services</a>
+          <!-- TODO: replace with real Cal.com / SavvyCal / Calendly URL -->
+          <a href="https://cal.com/collinparan/intro" class="button primary">Book a 30-min Intro</a>
+          <a href="#engagements" class="button">See Engagement Options</a>
         </div>
       </div>
       <aside class="signal-card" aria-label="Experience highlights">
-        <div class="metric"><strong>Production AI</strong><span>Systems designed for real operations, not slideware.</span></div>
-        <div class="metric"><strong>Agentic Workflows</strong><span>AI agents, middleware, governance, and enterprise integration.</span></div>
-        <div class="metric"><strong>Executive Advisory</strong><span>AI strategy for CEOs, CTOs, CIOs, and transformation leaders.</span></div>
+        <div class="metric"><strong>Built the first generative AI in space</strong><span>Production AI in one of the most constrained operating environments on the planet.</span></div>
+        <div class="metric"><strong>200%+ MRR growth in 6 months</strong><span>Led enterprise AI transformation with measurable revenue impact.</span></div>
+        <div class="metric"><strong>Patents in agentic systems</strong><span>Defense + enterprise transformation across regulated, mission-critical contexts.</span></div>
       </aside>
     </div>
 
-    <section id="services">
+    <div class="container proof-bar" aria-label="Track record">
+      <div class="proof-grid">
+        <div class="proof-item"><strong>Head of AI</strong><span>Senior leadership at a major enterprise scaling AI across the org.</span></div>
+        <div class="proof-item"><strong>Production, not slideware</strong><span>Agentic workflows deployed against real operations and real revenue.</span></div>
+        <div class="proof-item"><strong>Defense + enterprise</strong><span>Comfortable with security, governance, and regulated environments.</span></div>
+        <div class="proof-item"><strong>Executive partner</strong><span>Translates AI strategy into CEO, CFO, and board-grade decisions.</span></div>
+      </div>
+    </div>
+
+    <section id="engagements">
       <div class="container">
         <div class="section-head">
-          <h2>Services for enterprise leaders.</h2>
-          <p>Focused support for organizations that need to turn AI ambition into secure, scalable, production-grade capability.</p>
+          <h2>Three ways to engage.</h2>
+          <p>Each engagement is scoped against a specific business outcome — not staffing a chair. Pricing is shared on the intro call once we confirm fit.</p>
         </div>
-        <div class="grid">
-          <div class="card"><h3>Enterprise AI Strategy</h3><p>Define the roadmap, operating model, investment priorities, and measurable outcomes for AI transformation.</p></div>
-          <div class="card"><h3>AI Architecture & Integration</h3><p>Design bridge-ware, APIs, data flows, model routing, governance layers, and integration patterns across legacy systems.</p></div>
-          <div class="card"><h3>Agentic AI System Design</h3><p>Move beyond chatbots into planner-executor workflows, multi-agent systems, and governed automation.</p></div>
-          <div class="card"><h3>POC-to-Production Scaling</h3><p>Convert promising prototypes into reliable systems with deployment plans, observability, security, and ROI tracking.</p></div>
-          <div class="card"><h3>Executive AI Advisory</h3><p>Help senior leaders understand where AI creates leverage, where it creates risk, and what to build next.</p></div>
-          <div class="card"><h3>AI Governance & Risk</h3><p>Establish practical guardrails for data, model use, human review, compliance, and enterprise trust.</p></div>
+        <div class="engagements">
+          <article class="engagement">
+            <span class="tag">Sprint · 4–6 weeks</span>
+            <h3>AI Strategy Sprint</h3>
+            <p class="shape">Fixed scope, fixed fee. A board-ready AI roadmap and operating model in six weeks or less.</p>
+            <ul>
+              <li>Current-state diagnostic across workflows, data, and systems</li>
+              <li>Prioritized opportunity map with ROI and risk scoring</li>
+              <li>Target AI operating model and governance approach</li>
+              <li>12-month execution plan with owners and milestones</li>
+            </ul>
+            <div class="who">For executives who need clarity before committing capital.</div>
+          </article>
+
+          <article class="engagement">
+            <span class="tag">Retainer · monthly</span>
+            <h3>Embedded Fractional Head of AI</h3>
+            <p class="shape">Ongoing senior AI leadership without the full-time hire. 1–2 days a week, embedded with your team.</p>
+            <ul>
+              <li>AI architecture and integration decisions</li>
+              <li>Agentic workflow design and vendor selection</li>
+              <li>Governance, risk, and compliance posture</li>
+              <li>Team coaching and exec-level communication</li>
+            </ul>
+            <div class="who">For operators scaling AI capability without yet hiring a full-time CAIO.</div>
+          </article>
+
+          <article class="engagement">
+            <span class="tag">Project · scoped</span>
+            <h3>Agentic Implementation</h3>
+            <p class="shape">Hands-on delivery for a single high-leverage workflow — from prototype to production.</p>
+            <ul>
+              <li>Agent architecture and tool integration</li>
+              <li>Eval harness, observability, and guardrails</li>
+              <li>Deployment, rollout, and ROI tracking</li>
+              <li>Handoff to your internal team</li>
+            </ul>
+            <div class="who">For teams with a specific workflow that needs to actually ship.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="who">
+      <div class="container">
+        <div class="section-head">
+          <h2>Who I work with.</h2>
+          <p>Engagements where the gap isn't AI ambition — it's the bridge between ambition and operational reality.</p>
+        </div>
+        <div class="segments">
+          <div class="segment">
+            <h3>PE-backed operators</h3>
+            <p>Post-acquisition AI value creation across portfolio companies — pragmatic playbooks, not Big-Four decks.</p>
+          </div>
+          <div class="segment">
+            <h3>Regulated-industry enterprises</h3>
+            <p>Insurance, healthcare operations, financial services, and defense-adjacent organizations where governance is non-negotiable.</p>
+          </div>
+          <div class="segment">
+            <h3>Field operations & logistics</h3>
+            <p>Home services, field services, logistics, and rollups automating the ops-critical workflows that actually move the P&amp;L.</p>
+          </div>
+          <div class="segment">
+            <h3>Defense &amp; national security</h3>
+            <p>Mission-critical AI deployment in environments where reliability and accountability are table stakes.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -291,21 +438,59 @@
       </div>
     </section>
 
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About Collin.</h2>
+        </div>
+        <div class="about">
+          <div>
+            <p>I'm an operator-first AI leader. My background sits at the intersection of enterprise transformation, agentic systems, and mission-critical deployment — the work most organizations underestimate until they try to ship.</p>
+            <p>Most recently as Head of AI at a major enterprise, I led the program that produced the first generative AI deployment in space, drove 200%+ MRR growth in under six months, and shipped agentic workflows into production environments with real revenue attached.</p>
+            <p>I bring that operator perspective into every engagement: clear strategy, working architecture, and AI capability that survives contact with reality.</p>
+            <div class="links">
+              <!-- TODO: confirm LinkedIn URL -->
+              <a href="https://www.linkedin.com/in/collinparan/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="mailto:collin@collinparan.com">collin@collinparan.com</a>
+            </div>
+          </div>
+          <div>
+            <ul class="engagement-list" style="list-style:none;padding:0;margin:0;color:var(--muted);">
+              <li style="padding:10px 0;border-bottom:1px solid var(--line);"><strong style="color:var(--text);">First generative AI in space.</strong> Production AI under the tightest operating constraints that exist.</li>
+              <li style="padding:10px 0;border-bottom:1px solid var(--line);"><strong style="color:var(--text);">200%+ MRR growth.</strong> Enterprise AI transformation with measurable, executive-grade outcomes.</li>
+              <li style="padding:10px 0;border-bottom:1px solid var(--line);"><strong style="color:var(--text);">Patents in agentic systems.</strong> Original work in agent architecture and orchestration.</li>
+              <li style="padding:10px 0;"><strong style="color:var(--text);">Defense + enterprise.</strong> Comfortable with regulated, mission-critical, and security-sensitive contexts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
         <div class="cta">
           <div>
             <h2>Ready to operationalize AI?</h2>
-            <p>For enterprise consulting, executive advisory, or architecture engagements, reach out with the problem you are trying to solve and where your AI efforts are currently stuck.</p>
+            <p>Tell me where your AI efforts are currently stuck. If there's a fit, the next step is a 30-minute conversation — no deck, no pitch.</p>
           </div>
-          <a href="mailto:collin@collinparan.com?subject=Enterprise%20AI%20Consulting%20Inquiry" class="button primary">Email Collin</a>
+          <div class="actions">
+            <!-- TODO: replace with real calendar URL -->
+            <a href="https://cal.com/collinparan/intro" class="button primary">Book a Call</a>
+            <a href="mailto:collin@collinparan.com?subject=Fractional%20Head%20of%20AI%20Inquiry" class="button">Email Collin</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">© <span id="year"></span> Collin. Enterprise AI Strategy, Architecture, and Implementation.</div>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;width:min(1120px, calc(100% - 40px));">
+      <div>© <span id="year"></span> Collin Paran. Fractional Head of AI — Strategy, Architecture, Implementation.</div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/collinparan/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:collin@collinparan.com">Email</a>
+      </div>
+    </div>
   </footer>
 
   <script>
